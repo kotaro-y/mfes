@@ -1,0 +1,50 @@
+//共通設定項目
+html, body{
+  font-size: 15px;
+  font-family: $mainFonts;
+  color: #333;
+}
+a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color: #333;
+}
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+img{
+  display: block;
+  width: 100%;
+}
+.sp-only{
+  display: none;
+}
+.tb-sp-only{
+  display: none;
+}
+main{
+  display: block; // IE対策
+}
+
+.section{
+  padding: 80px 0;
+  &-wrapper{
+    @include mainWrapper;
+  }
+  &-title{
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    &::after{
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      content: '';
+      width: 70px;
+      border-bottom: 5px solid #000;
+    }
+  }
+}

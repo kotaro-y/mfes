@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+// 色の指定
+$baseColor: #969595;
+$mainColor: #457DBE;
+// $subColor; :
+// $bgColor: ;
+// $colorFB:#1877F2;
+
+// フォントの指定
+$mainFonts:'Lato', sans-serif;;
+$subFonts: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+
+// ブレイクポイント、メディアクエリの設定
+$spWidth: 560px;
+$tbWidth: 960px;
+$tbWidth2: 769px;
+@mixin mediaSP{
+  @media screen and (max-width : $spWidth){
+    @content;
+  }
+}
+@mixin mediaTB{
+  @media screen and (max-width : $tbWidth){
+    @content;
+  }
+}
+@mixin mediaPC{
+  @media screen and (min-width : $tbWidth2){
+    @content;
+  }
+}
+
+// ヘッダの高さ
+// $headerHeight: ;
+
+// 基本のラッパーサイズ
+@mixin mainWrapper{
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@mixin subWrapper{
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+// background の設定
+$pathImg: '../images/';
+@mixin bgImage($fileName) {
+	background-image: url($pathImg + $fileName);
+	background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+	@content;
+}
+@mixin bgBasic{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+// 画像のマスク（黒）
+@mixin blackMask{
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .2); 
+  }
+}
+// 画像のマスク（白）
+@mixin whiteMask{
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255, .7); 
+  }
+}
+
+// ボックスシャドウ
+@mixin boxShadowBasic{
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+// ホバーエフェクト(透過）
+@mixin hoverOpacity{
+  transition: opacity .3s;
+  @include mediaPC{
+    &:hover{
+      opacity: .7;
+    }
+  }
+}
+
+// 要素のセンター配置
+@mixin positionCenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// z-indexの指定用
+$z-map: modal, header, nav;
+@function getZIndex($name){
+  @return index($z-map, $name) + 100;
+}
+
+@mixin ctaBtn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  background-color: $mainColor;
+  z-index: getZIndex(contact);
+  a{
+    text-align: center;
+    display: block;
+    width: 50%;
+    line-height: 60px;
+    color: #fff !important;
+    span{
+      margin-right: 12px;
+    }
+  }
+  a:first-of-type{
+    border-right: 1px solid #fff;
+  }
+}

@@ -1,0 +1,135 @@
+.top-header{
+  position: relative;
+  width: 100vw;
+  height: 30.8vw;
+  // background-color: $mainColor;
+  background-image: url(../images/top_mainvisual@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-title{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0.2em;
+    line-height: 70px;
+  }
+  &-contact{
+    position: absolute;
+    top: 20px;
+    right: 3%;
+    color: #fff !important;
+    display: flex;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    img{
+      margin-right: 12px;
+      width: 21px;
+      height: 16px;
+    }
+    @include hoverOpacity;
+  }
+}
+
+.top-links{
+  &-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &-item{
+    width: 32%;
+    min-width: 330px;
+    margin-bottom: 14px;
+    a{
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 37% 27%;
+      background-color: $baseColor;
+      color: #fff !important;
+      transition: transform .3s, background-color .5s, box-shadow .3s;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 0.1em;
+      &:hover{
+        transform: translateY(-6px);
+        box-shadow: 0 8px 30px -10px #999;
+        background-color: #fff;
+        .top-links-item-num,.top-links-item-title{
+          color: #333;
+        }
+        .top-links-item-title::before{
+          border-color: #333;
+        }
+      }
+    }
+    &-num{
+      position: absolute;
+      display: block;
+      writing-mode: vertical-lr;
+      top: 35%;
+      left: 23%;
+      color: #fff;
+      font-size: 22px;
+      // transition: color .3s;
+    }
+    &-title{
+      position: absolute;
+      top: 42%;
+      left: 42%;
+      color: #fff;
+      line-height: 36px;
+      height: 72px;
+      // transition: color .3s;
+      &::before{
+        content: '';
+        position: absolute;
+        right: 100%;
+        top: 8%;
+        width: 60px;
+        border-bottom: 4px solid #fff;
+        transform: rotate(-45deg);
+        transform-origin: center;
+        // transition: border-color .3s;
+      }
+    }
+  }
+}
+
+.update{
+  &-list{
+    width: 90%;
+    margin: 0 auto 120px;
+  }
+  &-item{
+    a{
+      display: block;
+      border-bottom: 2px solid $baseColor;
+      width: 100%;
+      padding: 18px 6px;
+      display: flex;
+      transition: background-color .3s, color .3s, opacity .3s;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+      &:hover{
+        background-color: $baseColor;
+        opacity: .7;
+        color: #fff;
+      }
+      time{
+        display: block;
+        margin-right: 40px;
+      }
+      p{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
