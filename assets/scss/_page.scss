@@ -1,0 +1,203 @@
+.header{
+  background-color: $mainColor;
+  padding-top: 15px;
+  position: fixed;
+  z-index: getZIndex(header);
+  top: 0;
+  left: 0;
+  right: 0;
+  &-wrapper{
+    @include mainWrapper;
+  }
+}
+.global-nav{
+  &-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &-item{
+    width: 20%;
+    min-width: 180px;
+    a{
+      height: 30px;
+      font-size: 13px;
+      line-height: 15px;
+      letter-spacing: .1em;
+      color: #fff !important;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      margin-bottom: 15px;
+      transition: font-size .3s, opacity .3s, transform .3s;
+      &::before{
+        content: '';
+        height: 20px;
+        border-left: 1px solid #fff;
+        position: absolute;
+        left: 0;
+        top: 5px;
+      }
+      &:hover{
+        // background-color: $baseColor;
+        // transform: translateY(-3px);
+        opacity: .7;
+        font-size: 15px;
+      }
+    }
+    &:nth-child(5n) a::after{
+      content: '';
+      height: 20px;
+      border-right: 1px solid #fff;
+      position: absolute;
+      right: 0;
+      top: 5px;
+    }
+  }
+}
+
+.page-title{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  color: #fff;
+  &-wrapper{
+    margin-top: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 218px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    &._work{
+      background-image: url(../images/page_mainvisual_work.png);
+    }
+    &._salary{
+      background-image: url(../images/page_mainvisual_salary.png);
+    }
+    &._travel{
+      background-image: url(../images/page_mainvisual_travel.png);
+    }
+    &._system{
+      background-image: url(../images/page_mainvisual_system.png);
+    }
+    &._admin{
+      background-image: url(../images/page_mainvisual_admin.png);
+    }
+    &._visa{
+      background-image: url(../images/page_mainvisual_visa.png);
+    }
+    &._life{
+      background-image: url(../images/page_mainvisual_life.png);
+    }
+    &._pic{
+      background-image: url(../images/page_mainvisual_pic.png);
+    }
+    &._faq{
+      background-image: url(../images/page_mainvisual_faq.png);
+    }
+  }
+}
+
+.page-links{
+  &-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &-item{
+    width: 50%;
+    margin-bottom: 22px;
+    a{
+      font-size: 20px;
+      font-weight: bold;
+      width: 100%;
+      display: block;
+      position: relative;
+      transition: color .5s;
+      &:hover{
+        color: #fff;
+      }
+      &::after{
+        position: absolute;
+        bottom: -7px;
+        left: -10px;
+        content: '';
+        width: 85%;
+        transform: scale(0);
+        border-bottom: 32px solid $mainColor;
+        transition: .3s ease-in;
+        z-index: -1;
+        transform-origin: left;
+      }
+      &:hover::after{
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.hour-table{
+  width: 100%;
+  max-width: 600px;
+  margin: 60px auto 0;
+  background-color: #fff;
+  th,td{
+    vertical-align: middle;
+    text-align: center;
+    padding: 8px;
+  }
+  .row03,.row05,.row09{
+    td{
+      border-bottom: 1px solid #000;
+    }
+  }
+  .row02,.row04,.row06,.row08{
+    td:not(:last-of-type){
+      border-bottom: 1px solid #000;
+    }
+    td:nth-of-type(3){
+      border-right: 1px dotted #000;
+    }
+  }
+  .row07{
+    td{
+      border-bottom: 1px solid #000;
+    }
+  }
+  .row08{
+    td:nth-of-type(2){
+      border-right: 1px dotted #000;
+    }
+    td:nth-of-type(3){
+      border-right: none;
+    }
+  }
+  th{
+    font-weight: bold;
+    color: #fff;
+    background-color: $baseColor;
+    &:not(:last-of-type){
+      border-right: 1px dotted #fff;
+    }
+  }
+  .row02,.row04,.row06{
+    td{
+      &:nth-child(2){
+        border-right: 1px dotted #000;
+      }
+    }
+  }
+  .row08{
+    td{
+      &:nth-child(1){
+        border-right: 1px dotted #000;
+      }
+    }
+  }
+}

@@ -27,8 +27,14 @@ main{
 
 .section{
   padding: 80px 0;
+  &._colored{
+    background-color: #eee;
+  }
   &-wrapper{
     @include mainWrapper;
+    &._narrow{
+      max-width: 700px;
+    }
   }
   &-title{
     text-align: center;
