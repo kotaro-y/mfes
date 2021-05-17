@@ -39,7 +39,7 @@ main{
   &-title{
     text-align: center;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 52px;
     font-size: 26px;
     font-weight: bold;
     letter-spacing: 0.1em;
@@ -51,6 +51,58 @@ main{
       content: '';
       width: 70px;
       border-bottom: 5px solid #000;
+    }
+  }
+  &-desc{
+    line-height: 1.7;
+    width: 80%;
+    margin: 0 auto;
+    .bold{
+      font-weight: bold;
+    }
+    .red{
+      color: #f00;
+    }
+    &._bold{
+      font-weight: bold;
+    }
+    &._red{
+      color: #f00;
+    }
+    &._indent{
+      padding-left: 1.5em;
+    }
+    &._indent-plus{
+      padding-left: 4.5em;
+    }
+  }
+}
+
+#scroll-top{
+  position: fixed;
+  right: 60px;
+  bottom: 120px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s;
+  &.shown{
+    opacity: 1;
+    visibility: visible;
+  }
+  span{
+    display: block;
+    font-size: 42px;
+    color: $mainColor;
+    cursor: pointer;
+    transition: .4s;
+    &:hover{
+      opacity: .7;
     }
   }
 }
