@@ -65,12 +65,12 @@
       }
       &::after{
         position: absolute;
-        bottom: -7px;
+        bottom: -6px;
         left: -10px;
         content: '';
         width: 85%;
         transform: scale(0);
-        border-bottom: 32px solid $mainColor;
+        border-bottom: 40px solid $mainColor;
         transition: .3s ease-in;
         z-index: -1;
         transform-origin: left;
