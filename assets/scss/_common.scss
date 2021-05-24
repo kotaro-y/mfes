@@ -78,6 +78,10 @@ main{
     &._indent-plus{
       padding-left: 4.5em;
     }
+    a{
+      color: $mainColor !important;
+      text-decoration: underline;
+    }
   }
 }
 

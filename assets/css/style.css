@@ -240,6 +240,11 @@ main {
   padding-left: 4.5em;
 }
 
+.section-desc a {
+  color: #457DBE !important;
+  text-decoration: underline;
+}
+
 #scroll-top {
   position: fixed;
   right: 60px;
@@ -687,7 +692,14 @@ main {
 }
 
 .s-img {
+  min-width: 450px;
   width: 45%;
+  margin: 0 auto 40px;
+}
+
+.ss-img {
+  min-width: 300px;
+  width: 30%;
   margin: 0 auto 40px;
 }
 
