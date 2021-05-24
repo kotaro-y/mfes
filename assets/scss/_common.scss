@@ -63,6 +63,9 @@ main{
     .red{
       color: #f00;
     }
+    &._centered{
+      text-align: center;
+    }
     &._bold{
       font-weight: bold;
     }
