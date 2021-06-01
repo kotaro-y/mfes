@@ -53,6 +53,13 @@ main{
       border-bottom: 5px solid #000;
     }
   }
+  &-subtitle{
+    width: 80%;
+    margin: 0 auto 10px;
+    line-height: 1.7;
+    font-size: 18px;
+    font-weight: bold;
+  }
   &-desc{
     line-height: 1.7;
     width: 80%;
@@ -62,6 +69,11 @@ main{
     }
     .red{
       color: #f00;
+    }
+    a{
+      font-weight: bold;
+      color: #00f;
+      text-decoration: underline;
     }
     &._centered{
       text-align: center;
@@ -74,6 +86,14 @@ main{
     }
     &._indent{
       padding-left: 1.5em;
+      position: relative;
+      span{
+        position: absolute;
+        left: -.5em;
+      }
+      span.fa-check{
+        top: 4px;
+      }
     }
     &._indent-plus{
       padding-left: 4.5em;
