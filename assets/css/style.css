@@ -106,6 +106,10 @@
   padding-top: 0 !important;
 }
 
+._no-pb {
+  padding-bottom: 0 !important;
+}
+
 ._pt-s {
   padding-top: 40px !important;
 }
@@ -214,6 +218,10 @@ main {
   font-weight: bold;
 }
 
+.section-subtitle .red {
+  color: red;
+}
+
 .section-desc {
   line-height: 1.7;
   width: 80%;
@@ -240,6 +248,10 @@ main {
 
 .section-desc._bold {
   font-weight: bold;
+}
+
+.section-desc._large {
+  font-size: 24px;
 }
 
 .section-desc._red {

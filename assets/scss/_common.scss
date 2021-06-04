@@ -59,6 +59,9 @@ main{
     line-height: 1.7;
     font-size: 18px;
     font-weight: bold;
+    .red{
+      color: red;
+    }
   }
   &-desc{
     line-height: 1.7;
@@ -80,6 +83,9 @@ main{
     }
     &._bold{
       font-weight: bold;
+    }
+    &._large{
+      font-size: 24px;
     }
     &._red{
       color: #f00;
