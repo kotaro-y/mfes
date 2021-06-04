@@ -740,6 +740,51 @@ main {
   margin: 0 auto 40px;
 }
 
+.sss-img {
+  min-width: 120px;
+  width: 20%;
+  margin: 0 auto 40px;
+}
+
+.flex-img {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-img-s {
+  width: 100%;
+  max-width: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.flex-img-ss {
+  width: 50%;
+  max-width: 120px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .hour-table {
   width: 100%;
   max-width: 600px;
