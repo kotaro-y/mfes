@@ -853,4 +853,95 @@ main {
   width: 60%;
   min-width: 660px;
 }
+
+.pic-table {
+  width: 100%;
+  margin-bottom: 300px;
+}
+
+.pic-table tr th, .pic-table tr td {
+  padding: 8px 1rem;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+.pic-table .head th {
+  background-color: #969595;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pic-table .head th:not(:last-of-type) {
+  border-right: 1px solid #fff;
+}
+
+.pic-table .spacer {
+  height: 20px;
+}
+
+.pic-table .spacer:not(:first-of-type) {
+  border-top: 1px solid rgba(69, 125, 190, 0.1);
+}
+
+.pic-table .dep th {
+  background-color: #457DBE;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.pic-table .person th, .pic-table .person td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.pic-table .person th:first-of-type, .pic-table .person td:first-of-type {
+  border-right: 1px solid rgba(69, 125, 190, 0.1);
+  text-align: center;
+}
+
+.pic-table .person th {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: left !important;
+}
+
+.pic-table .person th[colspan="3"] {
+  text-align: center !important;
+}
+
+.pic-table .colored th, .pic-table .colored td {
+  background-color: rgba(69, 125, 190, 0.1);
+}
+
+.pic-table a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #457DBE !important;
+}
+
+.pic-table .ms-link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/msteams.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+@media screen and (min-width: 769px) {
+  .pic-table .ms-link:hover {
+    opacity: .7;
+  }
+}
+
+.pic-table .ms-link:last-of-type {
+  background-image: url(../images/msoutlook.png);
+  margin-right: 0;
+}
 /*# sourceMappingURL=style.css.map */

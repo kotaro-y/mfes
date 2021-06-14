@@ -217,5 +217,84 @@
   }
 }
 
-// Salary Policy Page
+// Person-In-Charge ページ
+.pic-table{
+  width: 100%;
+  margin-bottom: 300px;
+  tr{
+    th,td{
+      padding: 8px 1rem;
+      vertical-align: middle;
+      line-height: 1.5;
+    }
+  }
+  .head{
+    th{
+      background-color: $baseColor;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      &:not(:last-of-type){
+        border-right: 1px solid #fff;
+      }
+    }
+  }
+  .spacer{
+    height: 20px;
+    &:not(:first-of-type){
+      border-top: 1px solid transparentize($mainColor,.9);
+    }
+  }
+  .dep{
+    th{
+      background-color: $mainColor;
+      text-align: center;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+  .person{
+    th,td{
+      padding-top: 12px;
+      padding-bottom: 12px;
+      &:first-of-type{
+        border-right: 1px solid transparentize($mainColor,.9);
+        text-align: center;
+      }
+    }
+    th{
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: left !important;
+      &[colspan="3"]{
+        text-align: center !important;
+      }
+    }
+  }
+  .colored{
+    th,td{
+      background-color: transparentize($mainColor, .9);
+    }
+  }
+  a{
+    font-weight: bold;
+    text-decoration: underline;
+    color: $mainColor !important;
+  }
+  .ms-link{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/msteams.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    @include hoverOpacity;
+    &:last-of-type{
+      background-image: url(../images/msoutlook.png);
+      margin-right: 0;
+    }
+  }
+}
 
