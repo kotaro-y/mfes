@@ -250,6 +250,10 @@ main {
   font-weight: bold;
 }
 
+.section-desc._middle {
+  font-size: 18px;
+}
+
 .section-desc._large {
   font-size: 24px;
 }
@@ -681,6 +685,12 @@ main {
   transition: color .5s;
 }
 
+.page-links-item a._in-progress {
+  color: #999 !important;
+  pointer-events: none;
+  cursor: none;
+}
+
 .page-links-item a:hover {
   color: #fff;
 }
@@ -1029,5 +1039,53 @@ main {
 .pic-table .ms-link:last-of-type {
   background-image: url(../images/msoutlook.png);
   margin-right: 0;
+}
+
+.faq-list {
+  width: 100%;
+  line-height: 1.7;
+}
+
+.faq-title {
+  font-size: 1.6rem;
+  color: #888;
+  padding-left: 1rem;
+  border-bottom: 2px solid #457DBE;
+  border-left: 10px solid #457DBE;
+  margin-bottom: 20px;
+}
+
+.faq-title span {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #457DBE;
+  font-weight: bold;
+}
+
+.faq-detail {
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+  margin-bottom: 60px;
+}
+
+.faq-detail span {
+  color: red;
+  font-weight: bold;
+}
+
+.faq-detail p.indent {
+  padding-left: 2.5rem;
+  position: relative;
+}
+
+.faq-detail p.indent span {
+  position: absolute;
+  left: 0.5rem;
+  color: #333;
+  font-weight: normal;
+}
+
+.faq-detail p.bold {
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

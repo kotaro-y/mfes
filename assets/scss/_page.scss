@@ -60,6 +60,11 @@
       display: block;
       position: relative;
       transition: color .5s;
+      &._in-progress{
+        color: #999 !important;
+        pointer-events: none;
+        cursor: none;
+      }
       &:hover{
         color: #fff;
       }
@@ -365,6 +370,52 @@
       background-image: url(../images/msoutlook.png);
       margin-right: 0;
     }
+  }
+}
+
+// FAQページ
+.faq{
+  &-list{
+    width: 100%;
+    line-height: 1.7;
+  }
+  &-title{
+    font-size: 1.6rem;
+    color: #888;
+    padding-left: 1rem;
+    border-bottom: 2px solid $mainColor;
+    border-left: 10px solid $mainColor;
+    span{
+      display: inline-block;
+      margin-right: 1rem;
+      color: $mainColor;
+      font-weight: bold;
+    }
+    margin-bottom: 20px;
+  }
+  &-detail{
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    span{
+      color: red;
+      font-weight: bold;
+    }
+    p{
+      &.indent{
+        padding-left: 2.5rem;
+        position: relative;
+        span{
+          position: absolute;
+          left: 0.5rem;
+          color: #333;
+          font-weight: normal;
+        }
+      }
+      &.bold{
+        font-weight: bold;
+      }
+    }
+    margin-bottom: 60px;
   }
 }
 
