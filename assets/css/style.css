@@ -252,6 +252,28 @@ main {
 
 .section-desc._middle {
   font-size: 18px;
+  color: #457DBE;
+  position: relative;
+  margin-bottom: 20px !important;
+}
+
+.section-desc._middle span {
+  z-index: 2;
+  padding: 0 1rem;
+  background-color: #fff;
+}
+
+.section-desc._middle::after {
+  content: '';
+  width: 900px;
+  height: 1px;
+  background-color: #457DBE;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .section-desc._large {
@@ -759,6 +781,12 @@ main {
 .sss-img {
   min-width: 120px;
   width: 20%;
+  margin: 0 auto 40px;
+}
+
+.minimum-img {
+  min-width: 50px;
+  width: 8%;
   margin: 0 auto 40px;
 }
 
