@@ -104,6 +104,11 @@ main{
     &._indent-plus{
       padding-left: 4.5em;
     }
+    &._in-progress{
+      text-align: center;
+      color: #999;
+      font-style: italic;
+    }
     a{
       color: $mainColor !important;
       text-decoration: underline;
