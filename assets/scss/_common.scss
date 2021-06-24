@@ -118,6 +118,10 @@ main{
       span{
         position: absolute;
         left: -.5em;
+        &._pos{
+          position: static;
+          margin-right: 1rem;
+        }
       }
       span.fa-check{
         top: 4px;

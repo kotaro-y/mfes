@@ -424,3 +424,39 @@
   }
 }
 
+// Systemページ
+.leave-table{
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto 40px;
+  tr:first-of-type{
+    td{
+      font-weight: bold;
+      text-align: center;
+      background-color: #ccc;
+    }
+  }
+  tr{
+    border: 1px solid #333;
+    border-bottom: none;
+    td{
+      padding: 0.3em 1rem;
+      line-height: 1.5;
+      &:not(:last-of-type){
+        border-right: 1px solid #333;
+      }
+      &:first-of-type{
+        width: 30%;
+      }
+      &:nth-child(2){
+        width: 30%;
+      }
+      &:nth-child(3){
+        width: 40%;
+      }
+    }
+    &:last-of-type{
+      border-bottom: 1px solid #333;
+    }
+  }
+}

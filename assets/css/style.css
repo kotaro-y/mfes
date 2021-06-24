@@ -294,6 +294,11 @@ main {
   left: -.5em;
 }
 
+.section-desc._indent span._pos {
+  position: static;
+  margin-right: 1rem;
+}
+
 .section-desc._indent span.fa-check {
   top: 4px;
 }
@@ -1115,5 +1120,47 @@ main {
 
 .faq-detail p.bold {
   font-weight: bold;
+}
+
+.leave-table {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto 40px;
+}
+
+.leave-table tr:first-of-type td {
+  font-weight: bold;
+  text-align: center;
+  background-color: #ccc;
+}
+
+.leave-table tr {
+  border: 1px solid #333;
+  border-bottom: none;
+}
+
+.leave-table tr td {
+  padding: 0.3em 1rem;
+  line-height: 1.5;
+}
+
+.leave-table tr td:not(:last-of-type) {
+  border-right: 1px solid #333;
+}
+
+.leave-table tr td:first-of-type {
+  width: 30%;
+}
+
+.leave-table tr td:nth-child(2) {
+  width: 30%;
+}
+
+.leave-table tr td:nth-child(3) {
+  width: 40%;
+}
+
+.leave-table tr:last-of-type {
+  border-bottom: 1px solid #333;
 }
 /*# sourceMappingURL=style.css.map */
