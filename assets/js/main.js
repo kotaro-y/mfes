@@ -29,4 +29,13 @@ $(function(){
     return false;
   });
 
+  // QA開閉
+  $('.faq-title').each(function(){
+    $(this).on('click',function(){
+        $('+.faq-detail',this).slideToggle();
+        $(this).children('span:last-of-type').toggleClass('rotate');
+        return false;
+    });
+  });
+
 });

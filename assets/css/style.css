@@ -94,6 +94,10 @@
   }
 }
 
+._mr-s {
+  margin-right: 30px;
+}
+
 ._no-mb {
   margin-bottom: 0 !important;
 }
@@ -214,7 +218,7 @@ main {
   width: 80%;
   margin: 0 auto 10px;
   line-height: 1.7;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -280,6 +284,10 @@ main {
   font-size: 24px;
 }
 
+.section-desc._semi-large {
+  font-size: 18px;
+}
+
 .section-desc._red {
   color: #f00;
 }
@@ -299,7 +307,7 @@ main {
   margin-right: 1rem;
 }
 
-.section-desc._indent span.fa-check {
+.section-desc._indent span.fa-check, .section-desc._indent span.fa-train {
   top: 4px;
 }
 
@@ -316,6 +324,26 @@ main {
 .section-desc a {
   color: #457DBE !important;
   text-decoration: underline;
+}
+
+.section-desc._pos-relative {
+  position: relative;
+}
+
+.section-desc._pos-relative > img {
+  position: absolute;
+}
+
+.section-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-flex._center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #scroll-top {
@@ -789,6 +817,12 @@ main {
   margin: 0 auto 40px;
 }
 
+.ssss-img {
+  width: 115px;
+  height: 100px;
+  margin: 0 auto 20px;
+}
+
 .minimum-img {
   min-width: 50px;
   width: 8%;
@@ -983,6 +1017,33 @@ main {
   width: 45%;
 }
 
+.img-ss-ab._breaker {
+  display: block;
+  width: 200px;
+  height: 110px;
+  right: 70px;
+  bottom: -35px;
+}
+
+.img-ss-ab._gas {
+  display: block;
+  width: 160px;
+  height: 120px;
+  right: 70px;
+  bottom: -80px;
+}
+
+._mr-auto {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+.sign-img {
+  display: block;
+  width: 115px;
+  height: 100px;
+}
+
 .pic-table {
   width: 100%;
   margin-bottom: 300px;
@@ -1085,17 +1146,35 @@ main {
   padding-left: 1rem;
   border-bottom: 2px solid #457DBE;
   border-left: 10px solid #457DBE;
+  cursor: pointer;
   margin-bottom: 20px;
 }
 
-.faq-title span {
+.faq-title span:first-of-type {
   display: inline-block;
   margin-right: 1rem;
   color: #457DBE;
   font-weight: bold;
 }
 
+.faq-title span:last-of-type {
+  display: inline-block;
+  font-size: 22px;
+  margin-left: .5em;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  color: #457DBE;
+}
+
+.faq-title span:last-of-type.rotate {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .faq-detail {
+  display: none;
   font-size: 1.2rem;
   padding-left: 0.5rem;
   margin-bottom: 60px;

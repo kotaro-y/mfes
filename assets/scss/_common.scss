@@ -57,10 +57,13 @@ main{
     width: 80%;
     margin: 0 auto 10px;
     line-height: 1.7;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     .red{
       color: red;
+    }
+    ._lower{
+
     }
   }
   &-desc{
@@ -109,6 +112,9 @@ main{
     &._large{
       font-size: 24px;
     }
+    &._semi-large{
+      font-size: 18px;
+    }
     &._red{
       color: #f00;
     }
@@ -123,7 +129,7 @@ main{
           margin-right: 1rem;
         }
       }
-      span.fa-check{
+      span.fa-check,span.fa-train{
         top: 4px;
       }
     }
@@ -139,6 +145,18 @@ main{
       color: $mainColor !important;
       text-decoration: underline;
     }
+    &._pos-relative{
+      position: relative;
+      > img{
+        position: absolute;
+      }
+    }
+  }
+  &-flex{
+    display: flex;
+    &._center{
+      justify-content: center
+    };
   }
 }
 
