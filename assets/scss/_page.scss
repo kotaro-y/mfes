@@ -464,6 +464,11 @@
       &.bold{
         font-weight: bold;
       }
+      a{
+        font-weight: bold;
+        color: blue;
+        text-decoration: underline;
+      }
     }
     margin-bottom: 60px;
   }

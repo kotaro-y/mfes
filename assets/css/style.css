@@ -1201,6 +1201,12 @@ main {
   font-weight: bold;
 }
 
+.faq-detail p a {
+  font-weight: bold;
+  color: blue;
+  text-decoration: underline;
+}
+
 .leave-table {
   width: 100%;
   max-width: 750px;
